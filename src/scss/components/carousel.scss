@@ -1,0 +1,31 @@
+.carousel {
+  height: 100%;
+  .slides {
+    position: relative;
+    //background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    display : none;
+  }
+}
+
+.example-slide {
+  height : 400px;
+}
+
+$path : '../images/';
+//
+// .slide-home-1 {
+//   background-image : url( $path + 'homepage-banner-1.jpg');
+// }
+// .slide-home-2 {
+//   background-image : url( $path + 'homepage-banner-2.jpg');
+// }
+.slide-example-1 {
+  background-image: url( 'http://eskipaper.com/images/cool-wallpapers-hd-19.jpg');
+}
+.slide-example-2 {
+  background-image: url( 'http://freshwallpapers.in/walls/hd_city-HD.jpg');
+}
