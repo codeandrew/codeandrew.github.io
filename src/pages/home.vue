@@ -1,13 +1,26 @@
 <template lang="html">
   <main class="article home">
-    <h2>Hello World!</h2>
-    <h1>I'm Jean Andrew Fuentes</h1>
-    <h3>Web Developer</h3>
+    <div class="wrapper">
+      <h1 v-for="item in phrases"> {{ item }} </h1>
+    </div>
   </main>
 </template>
 
 <script>
 export default {
+  data(){
+    return {
+      phrases : [
+        'Hello World',
+        'I\'m Jean Andrew Fuentes ',
+        'Web Developer'
+      ]
+    }
+  },
+  mounted(){
+
+  }
+
 }
 </script>
 
