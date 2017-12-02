@@ -22,3 +22,53 @@ html, body {
  text-align: center;
  // color: #2c3e50;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+//raleway
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+//Roboto
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+//Open Sans
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+//Ubuntu
+
+html, body {
+  height : 100vh;
+  width : 100wh;
+  font: {
+    family : 'Raleway';
+    weight: 300;
+  }
+}
+
+.app {
+  text-align: center;
+  height: 100vh;
+	display : flex;
+	justify-content:center;
+	align-items: center;
+  z-index: 0;
+
+  .container {
+    top : 25vh;
+    position: absolute;
+  }
+}
+
+h1 {
+  font-size : 5vw;
+}
+
+#output {
+  color : #333;
+  margin-top : 20px;
+}
+
+.blink {
+  animation : blinking .7s infinite linear;
+}
+
+@keyframes blinking {
+  0% { opacity : 0; }
+  100% { opacity : 1 ;}
+}
