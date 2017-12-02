@@ -1,17 +1,16 @@
 <template lang="html">
   <nav>
     <div id="menuToggle">
-      
-      <input type="checkbox"/>
+      <input id="NavMenu" type="checkbox"/>
   		<span></span>
   		<span></span>
   		<span></span>
 
-      <ul id="menu">
+      <ul id="menu"  @click="closeNav">
         <router-link v-for="item in menu"
         tag='li' key='item.name' class="nav-link"
         :to="item.to">
-          <a > {{ item.name }}</a>
+          <a  class="test"> {{ item.name }}</a>
         </router-link>
       </ul>
     </div>
@@ -28,6 +27,16 @@ export default {
         { name : 'example', to : '/example'}
       ]
     }
+  },
+  methods : {
+    closeNav(){
+      document.getElementById('NavMenu')
+      .checked = false
+    }
+
+    // closeNav: function(){
+    //   console.log('test')
+    // }
   }
 }
 </script>
@@ -37,6 +46,7 @@ nav{
     position:fixed;
 }
 a{
+    font-weight: 300;
     text-decoration: none;
     /*font-family: 'Lato', sans-serif;*/
     color: #000000;
