@@ -1,42 +1,62 @@
 <template lang="html">
-  <div class="example article">
-    <h1>Example Page</h1>
-    <b-container>
-      <div class="example-slide">
-        <div class="carousel">
-           <div class="slides slide-example-1"> </div>
-          <div class="slides slide-example-2"></div>
-        </div>
+  <main class="example article">
+
+    <div class="app">
+      <div class="container">
+        <h4 class="result"><span id="output"> </span><span class="blink">|</span></h4>
       </div>
-    </b-container>
+    </div>
 
-    <info-section />
+    <!-- <info-section /> -->
 
-  </div>
+  </main>
 </template>
 
 <script>
 export default {
-
   mounted(){
-    var index = 0;
-    var slides = document.querySelectorAll('.slides');
-    carousel();
+    const phrases = [
+      'Hello World! ',
+      'I\'m Jean Andrew Fuentes ',
+      'and  ',
+      'I\'m a ',
+      'Web Developer  '
+    ]
 
-    function carousel(){
-    	if (slides.length > 0){
-    		var x = document.getElementsByClassName('slides');
-    		for (var i = 0; i < x.length; i++){
-    			x[i].style.display = "none";
-    		}
-    		index++;
-    		if (index > x.length){index = 1}
-    			x[index-1].style.display = "block";
-    		setTimeout(carousel, 3000);
-    	}
+    let textHolder = []
+
+    const output = document.querySelector('#output')
+    let i = 0, counter = 0
+    let value = phrases[counter].split('')
+
+    const typeEffect = () => {
+      const typeWriterInterval = setInterval(() => {
+      textHolder.push(value[i])
+      output.innerHTML = textHolder.join('')
+      i++
+
+      if(i >= value.length) {
+        clearInterval(typeWriterInterval)
+        const erase = setInterval(() => {
+              textHolder.pop()
+              output.innerHTML = textHolder.join('')
+              if (textHolder.length == 0){
+                clearInterval(erase)
+                i = 0
+                counter >= phrases.length ?
+                counter = 0 :
+                counter++;
+                console.log(phrases.length)
+                console.log('counter: ' + counter )
+                value = phrases[counter].split('')
+                typeEffect()
+                }
+          }, 150)
+        }
+      }, 50)
     }
-
-  }
+    typeEffect()
+ }
 }
 </script>
 
