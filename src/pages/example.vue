@@ -40,6 +40,7 @@ export default {
         const erase = setInterval(() => {
               textHolder.pop()
               output.innerHTML = textHolder.join('')
+
               if (textHolder.length == 0){
                 clearInterval(erase)
                 i = 0
@@ -51,11 +52,11 @@ export default {
                 value = phrases[counter].split('')
                 typeEffect()
                 }
-          }, 150)
+          }, 100)
         }
       }, 50)
     }
-    typeEffect()
+    setTimeout(typeEffect, 1000 )
  }
 }
 </script>
