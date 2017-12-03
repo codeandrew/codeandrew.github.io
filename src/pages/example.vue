@@ -19,8 +19,7 @@ export default {
       'Hello World! ',
       'I\'m Jean Andrew Fuentes ',
       'and  ',
-      'I\'m a ',
-      'Web Developer  '
+      'I\'m a Web Developer   '
     ]
 
     let textHolder = []
@@ -44,13 +43,13 @@ export default {
               if (textHolder.length == 0){
                 clearInterval(erase)
                 i = 0
-                counter >= phrases.length ?
-                counter = 0 :
-                counter++;
-                console.log(phrases.length)
-                console.log('counter: ' + counter )
+                if ( (counter + 1) >= phrases.length ){
+                  counter = 0
+                } else {
+                  counter++
+                }
                 value = phrases[counter].split('')
-                typeEffect()
+                setTimeout(typeEffect, 700)
                 }
           }, 100)
         }
