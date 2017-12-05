@@ -1,14 +1,9 @@
 <template lang="html">
   <div class="social-media">
     <ul>
-      <!-- <router-link v-for="item in list"
-      tag='li' key='item.name'
-      :to="item.to">
-        <a><i :class="item.class" aria-hidden="true"></i></a>
-      </router-link> -->
-      <li v-for="item in list">
-        <a :href="item.to">
-          <i :class="item.class" aria-hidden="true"></i>
+      <li v-for="item in list" >
+        <a :href="item.to" class="social-button" >
+          <i :class="item.class" class="spin circle" aria-hidden="true"></i>
         </a>
       </li>
     </ul>
