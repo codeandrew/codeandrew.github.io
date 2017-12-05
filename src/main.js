@@ -19,12 +19,14 @@ import sideNav from './common/side-nav'
 import footer from './common/footer'
 import infoCol from './components/info-col'
 import infoSection from './components/info-section'
+import socialMedia from './components/social-media-list'
 
 Vue.component('head-component', header )
 Vue.component('side-nav', sideNav )
 Vue.component('foot-component', footer )
 Vue.component('info-col', infoCol )
 Vue.component('infoSection', infoSection )
+Vue.component('social-media-list', socialMedia)
 
 
 //==================

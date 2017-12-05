@@ -3,8 +3,8 @@
     <div class="wrapper">
       <h1>
           <span id="output"> </span><span class="blink">|</span>
-       </h1>
-
+      </h1>
+      <social-media-list />
     </div>
   </main>
 </template>
