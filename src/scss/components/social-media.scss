@@ -1,0 +1,44 @@
+.social-media {
+  margin-top: 60px;
+  ul {
+    display: inline-block;
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 10px 20px;
+      a{
+        border: 1px solid transparent;
+        border-radius: 50%;
+        padding : 38px 20px 20px;
+        transition: .5s !important;
+
+        &:hover {
+          border: 1px solid #000;
+          color : #000;
+
+          & ~ .info {
+            opacity: 1
+          }
+
+
+        }
+        i{
+          border: 0;
+          box-sizing: border-box;
+          }
+        }
+
+        .info {
+          opacity: 0;
+          margin-top: 50px;
+          width:100px;
+        }
+      }
+    }
+  }
+
+  .social-button{
+    opacity: 1;
+    animation : opacity 1.4s linear;
+    position : relative;
+  }
