@@ -6,7 +6,7 @@
           <i :class="item.class" class="spin circle" aria-hidden="true"></i>
         </a>
         <div class="info">
-          <p> {{ item.name }}</p>          
+          <p> {{ item.name }}</p>
         </div>
       </li>
     </ul>
@@ -22,6 +22,11 @@ export default {
           to: 'https://codepen.io/andrewfuentes/' ,
           class : 'fa fa-codepen fa-3x',
           name: 'codepen'
+        },
+        {
+          to: 'https://github.com/codeandrew' ,
+          class : 'fa fa-github fa-3x',
+          name: 'github'
         },
         {
           to: 'https://twitter.com/code_drew/' ,
