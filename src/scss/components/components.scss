@@ -70,3 +70,31 @@
     }
 
   }
+
+.skill-manager {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+
+    .skill-list {
+      width : 200px;
+      margin: 30px;
+      h4{
+        text-align: left;
+      }
+      ul {
+        list-style-type: none;
+        text-align: left;
+
+        li {
+          &::before{
+            content: ">_";
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

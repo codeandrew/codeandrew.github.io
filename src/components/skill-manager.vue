@@ -2,19 +2,67 @@
   <div class="skill-manager">
     <h2>Skill Manager</h2>
 
-    <skill-list
-    title="Programming Languages"
-    :skill="programming_language"
-    />
+    <div class="wrapper">
+      <div class="">
+        <skill-list
+          title="Programming Languages"
+          :skill="programming_languages"
+        />
+        <skill-list
+          title="Frameworks"
+          :skill="frameworks"
+        />
+        <skill-list
+          title="Content Management System"
+          :skill="cms"
+        />
+      </div>
+      <div class="">
+        <skill-list
+          title="Markup Languages"
+          :skill="markup_languages"
+        />
+        <skill-list
+          title="Preprocessor"
+          :skill="preprocessor"
+        />
+        <skill-list
+          title="Database"
+          :skill="database"
+        />
+      </div>
+      <div class="">
+        <skill-list
+          title="Webtools"
+          :skill="webtools"
+        />
+        <skill-list
+          title="Apache"
+          :skill="apache"
+        />
+        <skill-list
+          title="Operating System"
+          :skill="os"
+        />
+      </div>
+    </div>
+
+
   </div>
 </template>
 
 <script>
+import { mapState } from 'vuex'
 export default {
-  data(){
-    return {
-      programming_language : ['JavaScript', 'PHP']
-    }
+  computed: {
+    ...mapState([
+      'programming_languages', 'frameworks', 'markup_languages', 'preprocessor',
+      'webtools', 'database', 'cms', 'apache', 'os'
+
+      ])
+  },
+  mounted(){
+    console.log(this.programming_languages)
   }
 }
 </script>
