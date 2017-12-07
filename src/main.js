@@ -20,6 +20,8 @@ import footer from './common/footer'
 import infoCol from './components/info-col'
 import infoSection from './components/info-section'
 import socialMedia from './components/social-media-list'
+import skillList from './components/skill-list'
+import skillManager from './components/skill-manager'
 
 Vue.component('head-component', header )
 Vue.component('side-nav', sideNav )
@@ -27,7 +29,8 @@ Vue.component('foot-component', footer )
 Vue.component('info-col', infoCol )
 Vue.component('infoSection', infoSection )
 Vue.component('social-media-list', socialMedia)
-
+Vue.component('skill-list', skillList )
+Vue.component('skill-manager', skillManager )
 
 //==================
 

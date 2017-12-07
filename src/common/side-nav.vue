@@ -24,7 +24,8 @@ export default {
       menu : [
         { name : 'home', to : '/'},
         { name : 'about', to : '/about'},
-        { name : 'projects', to : '/projects'}
+        { name : 'skills', to : '/skills'},
+        { name : 'projects', to : '/projects'},
       ]
     }
   },
