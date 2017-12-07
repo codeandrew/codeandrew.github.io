@@ -14,7 +14,8 @@ export const store = new Vuex.Store({
     cms : ['wordpress'],
     apache : ['ampps', 'mamp', 'xampp'],
     database : ['sql'],
-    os : [ 'Ubuntu Linux', 'OSX' ]
+    os : [ 'Ubuntu Linux', 'OSX' ],
+    ide : ['Atom', 'Sublime', 'Vim']
   },
   actions : {
 

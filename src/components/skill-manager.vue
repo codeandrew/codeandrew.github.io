@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="skill-manager">
-    <h2>Skill Manager</h2>
+    <!-- <h2>Skill Manager</h2> -->
 
     <div class="wrapper">
       <div class="">
@@ -30,6 +30,10 @@
           title="Database"
           :skill="database"
         />
+        <skill-list
+          title="IDE"
+          :skill="ide"
+        />
       </div>
       <div class="">
         <skill-list
@@ -57,9 +61,8 @@ export default {
   computed: {
     ...mapState([
       'programming_languages', 'frameworks', 'markup_languages', 'preprocessor',
-      'webtools', 'database', 'cms', 'apache', 'os'
-
-      ])
+      'webtools', 'database', 'cms', 'apache', 'os', 'ide'
+    ])
   },
   mounted(){
     console.log(this.programming_languages)

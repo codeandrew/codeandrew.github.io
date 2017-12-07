@@ -71,6 +71,15 @@
 
   }
 
+.skill-page {
+  @extend .section-pad-lg;
+  .content {
+    max-width: 780px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+}
+
 .skill-manager {
   .wrapper {
     display: flex;
@@ -83,6 +92,10 @@
       margin: 30px;
       h4{
         text-align: left;
+
+        &:hover::before {
+          content : '>'
+        }
       }
       ul {
         list-style-type: none;
