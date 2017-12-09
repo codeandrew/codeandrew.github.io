@@ -22,8 +22,8 @@ html, body {
   width : 100vw;
   background-color: #fff;
   font: {
-    family : 'Raleway';
-    weight: 300;
+    family : 'Raleway' !important;
+    weight: 300 !important;
   }
 }
 
@@ -41,10 +41,6 @@ html, body {
   }
 }
 
-h1 {
-  font-size : 5vw;
-}
-
 #output {
   color : #333;
   margin-top : 20px;
@@ -59,8 +55,8 @@ h1 {
   100% { opacity : 1 ;}
 }
 a{
-    font-weight: 300;
-    text-decoration: none;
-    color: #000;
+    font-weight: 300 !important;
+    text-decoration: none !important;
+    color: #000 !important;
     transition: color 0.3s ease;
 }
