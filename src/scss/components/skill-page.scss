@@ -1,0 +1,45 @@
+
+.skill-page {
+  @extend .section-pad-lg;
+  height: 100vh;
+  animation : opacity-page 1s linear;
+  position: relative;
+
+  .content {
+    max-width: 780px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+}
+
+.skill-manager {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+
+    .skill-list {
+      width : 200px;
+      margin: 30px;
+      h4{
+        text-align: left;
+
+        &:hover::before {
+          content : '>'
+        }
+      }
+      ul {
+        list-style-type: none;
+        text-align: left;
+
+        li {
+          &::before{
+            content: ">_";
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}
