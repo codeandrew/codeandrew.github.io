@@ -31,25 +31,28 @@ export default {
       textHolder.push(value[i])
       output.innerHTML = textHolder.join('')
       i++
+
       if(i >= value.length) {
         clearInterval(typeWriterInterval)
-        const erase = setInterval(() => {
-              textHolder.pop()
-              output.innerHTML = textHolder.join('')
-
-              if (textHolder.length == 0){
-                clearInterval(erase)
-                i = 0
-                if ( (counter + 1) >= this.phrases.length ){
-                  counter = 0
-                } else {
-                  counter++
-                }
-                value = this.phrases[counter].split('')
-                setTimeout(typeEffect, 700)
-                }
-          }, 120)
+        setTimeout(()=> {
+          const erase = setInterval(() => {
+                textHolder.pop()
+                output.innerHTML = textHolder.join('')
+                if (textHolder.length == 0){
+                  clearInterval(erase)
+                  i = 0
+                  if ( (counter + 1) >= this.phrases.length ){
+                    counter = 0
+                  } else {
+                    counter++
+                  }
+                  value = this.phrases[counter].split('')
+                  setTimeout(typeEffect, 1000)
+                  }
+            }, 40)
+        }, 1200)
         }
+
       }, 40)
     }
     setTimeout(typeEffect, 1000 )
