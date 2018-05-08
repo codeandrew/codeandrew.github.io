@@ -83,5 +83,25 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="scss">
+#particles-js {
+  z-index: 1;
+  position: relative;
+}
+
+.home-page{
+  height: 100%;
+  width: 100%;
+
+  .home-banner{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .article{
+    padding : 60px 0;
+  }
+}
 </style>
