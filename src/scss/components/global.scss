@@ -6,6 +6,7 @@
 
 #app {
  text-align: center;
+ height: 100%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
@@ -18,8 +19,8 @@
 //Ubuntu
 
 html, body {
-  height : 100vh;
-  width : 100vw;
+  height : 100%;
+  width : 100%;
   background-color: #fff;
   font: {
     family : 'Raleway' !important;
@@ -29,7 +30,7 @@ html, body {
 
 .app {
   text-align: center;
-  height: 100vh;
+  height: 100%;
 	display : flex;
 	justify-content:center;
 	align-items: center;
