@@ -1,5 +1,7 @@
 .social-media {
   margin-top: 60px;
+  position: relative;
+  z-index: 2;
   ul {
     display: inline-block;
     list-style: none;
