@@ -10,7 +10,7 @@ export const store = new Vuex.Store({
     preprocessor : ['pug', 'scss', 'es6'],
     markup_languages : ['html5', 'css3'],
 
-    webtools : ['npm','gulp', 'webpack','composer', 'artisan', 'git', 'cpanel', ],
+    webtools : ['npm','gulp', 'webpack','composer', 'artisan', 'git', 'cpanel', 'sequel pro' ],
     cms : ['wordpress'],
     apache : ['ampps', 'mamp', 'xampp'],
     database : ['sql'],
