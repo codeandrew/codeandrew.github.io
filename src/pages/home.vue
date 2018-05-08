@@ -1,11 +1,33 @@
 <template lang="html">
-  <main class="article home">
-    <div class="wrapper">
-      <h1>
+  <main class="home-page">
+    <vue-particles
+    color="#000000"
+    :particleOpacity="0.4"
+    :particlesNumber="150"
+    shapeType="circle"
+    :particleSize="2"
+    linesColor="#000000"
+    :linesWidth="1"
+    :lineLinked="true"
+    :lineOpacity="0.2"
+    :linesDistance="130"
+    :moveSpeed="3"
+    :hoverEffect="true"
+    hoverMode="grab"
+    :clickEffect="true"
+    clickMode="push"
+    >
+  </vue-particles>
+
+    <div class="article home-banner">
+      <div class="wrapper">
+        <h1>
           <span id="output"> </span><span class="blink">|</span>
-      </h1>
-      <social-media-list />
+        </h1>
+        <social-media-list />
+      </div>
     </div>
+
   </main>
 </template>
 
