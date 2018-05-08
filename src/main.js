@@ -4,10 +4,14 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import BootstrapVue from 'bootstrap-vue'
+import VueParticles from 'vue-particles'
+
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap/dist/css/bootstrap.css'
+
 import { store } from './store';
 
+Vue.use(VueParticles)
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
