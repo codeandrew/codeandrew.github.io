@@ -7,6 +7,7 @@
 - Sass
 - BootstrapVue
 - Vuex
+- VueParticles
 
 
 
