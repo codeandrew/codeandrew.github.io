@@ -1,6 +1,6 @@
  nav{
      position:fixed;
-     z-index: 1;
+     z-index: 11;
  }
 
  #menuToggle{
@@ -8,7 +8,7 @@
      position: relative;
      top: 50px;
      left: 50px;
-     z-index: 2;
+     z-index: 12;
      -webkit-user-select: none;
      user-select: none;
  }
@@ -21,7 +21,7 @@
      left: -5px;
      cursor: pointer;
      opacity: 0;
-     z-index: 4;
+     z-index: 14;
      -webkit-touch-callout: none;
  }
  #menuToggle span{
@@ -32,7 +32,7 @@
      position: relative;
      background: #000000;
      border-radius: 3px;
-     z-index: 3;
+     z-index: 13;
      transform-origin: 4px 0px;
      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
@@ -97,5 +97,5 @@
      transform: scale(1.0, 1.0);
      opacity: 1;
     //  background-color: #000;
-     z-index: 1;
+     z-index: 11;
  }
