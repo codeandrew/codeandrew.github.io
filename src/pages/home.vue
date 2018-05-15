@@ -84,35 +84,4 @@ export default {
 </script>
 
 <style lang="scss">
-#particles-js {
-  z-index: 1;
-  position: relative;
-      height: 100%;
-      width: 100%;
-
-  canvas {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-.home-page{
-  height: 100%;
-  width: 100%;
-
-  .home-banner{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // padding: 0;
-  }
-
-  .article{
-    // padding : 60px 0;
-  }
-}
 </style>
