@@ -1,16 +1,16 @@
 <template lang="html">
   <main class="home-page">
     <vue-particles
-    color="#000000"
+    color="#000"
     :particleOpacity="0.4"
-    :particlesNumber="150"
+    :particlesNumber="100"
     shapeType="circle"
     :particleSize="2"
-    linesColor="#000000"
+    linesColor="#000"
     :linesWidth="1"
     :lineLinked="true"
     :lineOpacity="0.2"
-    :linesDistance="130"
+    :linesDistance="150"
     :moveSpeed="3"
     :hoverEffect="true"
     hoverMode="grab"
@@ -87,6 +87,13 @@ export default {
 #particles-js {
   z-index: 1;
   position: relative;
+      height: 100%;
+      width: 100%;
+
+  canvas {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .home-page{
@@ -98,10 +105,14 @@ export default {
     top: 0;
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding: 0;
   }
 
   .article{
-    padding : 60px 0;
+    // padding : 60px 0;
   }
 }
 </style>
