@@ -21,7 +21,7 @@
 html, body {
   height : 100%;
   width : 100%;
-  background-color: #fff;
+  background-color: $secondary-color;
   font: {
     family : 'Raleway' !important;
     weight: 300 !important;
@@ -58,6 +58,6 @@ html, body {
 a{
     font-weight: 300 !important;
     text-decoration: none !important;
-    color: #000 !important;
+    color: $primary-color  !important;
     transition: color 0.3s ease;
 }

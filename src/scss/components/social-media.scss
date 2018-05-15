@@ -14,8 +14,8 @@
         transition: .5s !important;
 
         &:hover {
-          border: 1px solid #000;
-          color : #000;
+          border: 1px solid $primary-color ;
+          color : $primary-color ;
 
           & ~ .info {
             opacity: 1

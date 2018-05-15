@@ -30,7 +30,7 @@
      height: 4px;
      margin-bottom: 5px;
      position: relative;
-     background: #000000;
+     background: $primary-color ;
      border-radius: 3px;
      z-index: 13;
      transform-origin: 4px 0px;
@@ -47,8 +47,8 @@
  #menuToggle input:checked ~ span{
      opacity: 1;
      transform: rotate(45deg) translate(-2px, -1px);
-    //  background: #fff;
-     /*color: #fff*/
+    //  background: $secondary-color;
+     /*color: $secondary-color*/
  }
  #menuToggle input:checked ~ span:nth-last-child(3){
      opacity: 0;
@@ -65,7 +65,7 @@
      margin: -77px 0 0 -50px;
      padding: 50px;
      padding-top: 125px;
-     background-color: #ffffff;
+     background-color: $secondary-color;
      list-style-type: none;
      -webkit-font-smoothing: antialiased;
      transform-origin: 0% 0%;
@@ -79,7 +79,7 @@
      a{
          font-weight: 300;
          text-decoration: none;
-         color: #000;
+         color: $primary-color ;
          transition: color 0.3s ease;
          &:hover{
             //  color: #999999;
@@ -96,6 +96,6 @@
  #menuToggle input:checked ~ ul{
      transform: scale(1.0, 1.0);
      opacity: 1;
-    //  background-color: #000;
+    //  background-color: $primary-color ;
      z-index: 11;
  }
