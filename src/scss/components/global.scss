@@ -42,19 +42,6 @@ html, body {
   }
 }
 
-#output {
-  color : #333;
-  margin-top : 20px;
-}
-
-.blink {
-  animation : blinking .9s infinite linear;
-}
-
-@keyframes blinking {
-  0% { opacity : 0; }
-  100% { opacity : 1 ;}
-}
 a{
     font-weight: 300 !important;
     text-decoration: none !important;
