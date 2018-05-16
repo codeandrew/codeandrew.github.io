@@ -45,12 +45,12 @@
     padding : 38px 20px 20px;
 
     .fa-3x {
-      @media screen and ( max-width: $break-six){
+      @media screen and ( max-width: $break-mobile-large){
         font-size: 2em;
       }
     }
 
-    @media screen and (max-width: $break-six ){
+    @media screen and (max-width: $break-mobile-large ){
       padding : 30px 20px 20px
     }
   }
