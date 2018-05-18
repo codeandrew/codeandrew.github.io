@@ -50,36 +50,36 @@ export default {
     let value = this.phrases[counter].split('')
     const typeEffect = () => {
       const typeWriterInterval = setInterval(() => {
-      textHolder.push(value[i])
-      output.innerHTML = textHolder.join('')
-      i++
+        textHolder.push(value[i])
+        output.innerHTML = textHolder.join('')
+        i++
 
-      if(i >= value.length) {
-        clearInterval(typeWriterInterval)
-        setTimeout(()=> {
-          const erase = setInterval(() => {
-                textHolder.pop()
-                output.innerHTML = textHolder.join('')
-                if (textHolder.length == 0){
-                  clearInterval(erase)
-                  i = 0
-                  if ( (counter + 1) >= this.phrases.length ){
-                    counter = 0
-                  } else {
-                    counter++
-                  }
-                  value = this.phrases[counter].split('')
-                  setTimeout(typeEffect, 1000)
-                  }
+        if(i >= value.length) {
+          clearInterval(typeWriterInterval)
+          setTimeout(()=> {
+            const erase = setInterval(() => {
+              textHolder.pop()
+              output.innerHTML = textHolder.join('')
+              if (textHolder.length == 0){
+                clearInterval(erase)
+                i = 0
+                if ( (counter + 1) >= this.phrases.length ){
+                  counter = 0
+                } else {
+                  counter++
+                }
+                value = this.phrases[counter].split('')
+                setTimeout(typeEffect, 1000)
+              }
             }, 40)
-        }, 1200)
+          }, 1200)
         }
 
       }, 40)
     }
     setTimeout(typeEffect, 1000 )
   }
-
+  
 }
 </script>
 
