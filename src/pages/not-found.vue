@@ -15,11 +15,11 @@ export default {
   mounted(){
     // Get the walker image:
     const walker = document.getElementById('walker');
-    const walkingLeft = true;
-    const dist = 6;
-    const leftBorder = 600;
-    const rightBorder = 10;
-    const position = rightBorder;
+    let walkingLeft = true;
+    let dist = 6;
+    let leftBorder = 600;
+    let rightBorder = 10;
+    let position = rightBorder;
 
     function check(){
       position += walkingLeft ? dist : -dist;
