@@ -79,9 +79,9 @@ export default {
     }
     setTimeout(typeEffect, 1000 )
   }
-  
+
 }
 </script>
 
-<style lang="scss">
+<style lang="css">
 </style>
