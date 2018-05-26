@@ -42,7 +42,13 @@ font-size: 14px;
 }
 .about-me {
   margin: 0 auto;
-  width :400px;
+  width :100%;
+  padding : 0 15px;
+
+  @media screen and (min-width: $break-mobile-large ){
+    width :450px;
+    padding: 0;
+  }
 
   p {
     text-align: justify;
