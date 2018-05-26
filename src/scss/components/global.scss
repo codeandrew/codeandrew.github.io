@@ -48,3 +48,10 @@ a{
     color: $primary-color  !important;
     transition: color 0.3s ease;
 }
+
+.subtitle {
+  color : $tertiary-color;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
