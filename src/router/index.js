@@ -39,7 +39,7 @@ export default new Router({
     {
       path : '/docs',
       name : 'home',
-      component : home
+      component : Home
     }
   ]
 })
