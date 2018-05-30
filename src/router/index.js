@@ -35,6 +35,11 @@ export default new Router({
       path : '*',
       name : 'page not found',
       component : PageNotFound
+    },
+    {
+      path : '/docs',
+      name : 'home',
+      component : home
     }
   ]
 })
