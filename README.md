@@ -31,3 +31,20 @@ npm run deploy
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+
+
+### Notes in configuration :
+-  In config/index.js changed assetsPublicPath to docs for github pages
+```
+assetsPublicPath: '/docs/',
+```
+
+- In VueParticles include this in webpack.base.conf.js
+```
+{
+  test: /\.js$/,
+  loader: 'babel-loader',
+  include: [resolve('src'), resolve('test'), resolve('node_modules/vue-particles')]
+},
+```
