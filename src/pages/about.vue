@@ -21,7 +21,14 @@
       <br />
       <h4>About this Website</h4>
       <p>{{ about_the_web }}</p>
+      
+      <br><br><br>
+      <h4>Follow me  </h4>
+      <social-media-list />
     </div>
+
+
+
 
     </b-container>
   </div>
