@@ -21,7 +21,7 @@
       <br />
       <h4>About this Website</h4>
       <p>{{ about_the_web }}</p>
-      
+
       <br><br><br>
       <h4>Follow me  </h4>
       <social-media-list />
@@ -49,9 +49,12 @@ export default {
         I wasn't always been a programmer but ever since I was kid I love doing things
         on the computer. `,
         ` Well, still now I spend most of my time doing stuff in front of a computer, bashing command lines on
-        the terminal, playing on linux, studying new web technologies and frameworks.
+        the terminal, playing with the system of linux, studying new web technologies, software architectures and frameworks.
         I tend to to write and code for long hours, because I like the sound of my own fingers tapping keys.
-        But most of all I'm on a path to master JavaScript. I'm consistently learning new things everyday about programming. `
+        I'm consistently learning new things everyday about programming.
+        Javascript for creating User Interface and handling client side logic, PHP for handling the backend,
+        connecting to database and Python for creating automated scripts and tools.
+         `
       ],
       about_the_web : ` This is a place where I record my thoughts and discoveries which are more or less related to programming and stuff that I like.
       This website was built with VueJs and runs on github pages. Right now, I'm still improving this site,
