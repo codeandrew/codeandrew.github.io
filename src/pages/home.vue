@@ -6,7 +6,7 @@
     :particlesNumber="100"
     shapeType="circle"
     :particleSize="2"
-    linesColor="#000"
+    linesColor="#fff"
     :linesWidth="1"
     :lineLinked="true"
     :lineOpacity="0.2"
@@ -18,7 +18,6 @@
     clickMode="push"
     >
   </vue-particles>
-
     <div class="article home-banner">
       <div class="wrapper">
         <h1>
