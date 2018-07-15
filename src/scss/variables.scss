@@ -3,6 +3,7 @@ $raleway : 'Raleway', sans-serif;
 $open-sans: 'Open Sans', sans-serif;
 $montserrat: 'Montserrat', sans-serif;
 $ubuntu: 'Ubuntu', sans-serif;
+$lato: 'Lato', sans-serif;
 
 
 //colors
@@ -11,6 +12,8 @@ $dirty-white : #f8f8f8;
 $gray : #eee;
 $black : #000;
 $white: #fff;
+$shiny-gray : rgba(255, 255, 255, 0.65);
+
 $light-brass : #cbb682;
 $brass : #a08c5b;
 $dark-brass : #785f37;
@@ -19,6 +22,7 @@ $primary-color : $black;
 $secondary-color : $white;
 $tertiary-color : $dark-brass;
 
+$font-color : $shiny-gray;
 
 //responsive
 
