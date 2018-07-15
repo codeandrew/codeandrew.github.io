@@ -24,6 +24,8 @@ html, body {
   height : 100%;
   width : 100%;
   background-color: $secondary-color;
+  // color: rgba(255, 255, 255, 0.65);
+  color: $shiny-gray;
   font: {
     family : 'Raleway' !important;
     weight: 300 !important;
