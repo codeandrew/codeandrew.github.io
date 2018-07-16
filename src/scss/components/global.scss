@@ -58,6 +58,9 @@ a {
     color: $primary-color  !important;
     transition: color 0.3s ease;
 }
+p {
+  letter-spacing: 1px;
+}
 
 .subtitle {
   color : $tertiary-color;
