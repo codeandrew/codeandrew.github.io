@@ -50,8 +50,17 @@ font-size: 14px;
     width :450px;
     padding: 0;
   }
+  
+  h1, h4 {
+    font : {
+      weight : 100;
+    }
+  }
 
   p {
     text-align: justify;
+    font : {
+      weight :100;
+    }
   }
 }
