@@ -52,7 +52,7 @@ export default {
         the terminal, playing with the system of linux, studying new web technologies, software architectures and frameworks.
         I tend to to write and code for long hours, because I like the sound of my own fingers tapping keys.
         I'm consistently learning new things everyday about programming.
-        Javascript for creating User Interface and handling client side logic, PHP for handling the backend,
+        I use Javascript for creating User Interface and handling client side logic, PHP for handling the backend,
         connecting to database and Python for creating automated scripts and tools.
          `
       ],
