@@ -14,22 +14,63 @@ export default new Router({
     {
       path: '/',
       name : 'home',
-      component : Home
+      component : Home,
+      meta : {
+        requiresAuth: false,
+        title : "codeandrew.github.io",
+        metaTags: [
+          {
+            name: 'Home',
+            content: 'Jean Andrew Fuentes FullStack Web Developer'
+          }
+        ]
+      }
     },
     {
       path: '/about',
       name : 'about',
-      component : About
+      component : About,
+      meta : {
+        requiresAuth: false,
+        title : "About Me",
+        metaTags: [
+          {
+            name: 'about',
+            content: 'Jean Andrew Fuentes FullStack Web Developer'
+          }
+        ]
+      }
     },
     {
       path: '/skills',
       name : 'skills',
-      component : Skills
+      component : Skills,
+      meta : {
+        requiresAuth: false,
+        title : "My Skill",
+        metaTags: [
+          {
+            name: 'skills',
+            content: 'My Skills'
+          }
+        ]
+      }
+
     },
     {
       path: '/projects',
       name : 'projects',
-      component : Projects
+      component : Projects,
+      meta : {
+        requiresAuth: false,
+        title : "Projects",
+        metaTags: [
+          {
+            name: 'Projects',
+            content: 'codeandrew projects'
+          }
+        ]
+      }
     },
     {
       path : '*',
@@ -39,7 +80,17 @@ export default new Router({
     {
       path : '/docs',
       name : 'home',
-      component : Home
+      component : Home,
+      meta : {
+        requiresAuth: false,
+        title : "Codeandrew.github.io",
+        metaTags: [
+          {
+            name: 'Home',
+            content: 'Jean Andrew Fuentes FullStack Web Developer'
+          }
+        ]
+      }
     }
   ]
 })
