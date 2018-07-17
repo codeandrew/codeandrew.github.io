@@ -7,10 +7,14 @@
   		<span></span>
 
       <ul id="menu"  @click="closeNav">
-        <router-link v-for="item in menu"
-        tag='li' key='item.name' class="nav-link"
-        :to="item.to">
-          <a  class="test"> {{ item.name }}</a>
+        <router-link
+          v-if="publicRoutes"
+          v-for="item in publicRoutes"
+          tag='li'
+          key='item.name'
+          class="nav-link"
+          :to="item.path">
+            <a  class="test"> {{ item.name }}</a>
         </router-link>
       </ul>
     </div>
