@@ -21,14 +21,7 @@
 import { mapState, mapGetters } from 'vuex'
 export default {
   data(){
-    return {
-      menu : [
-        { name : 'home', to : '/'},
-        { name : 'about', to : '/about'},
-        { name : 'skills', to : '/skills'},
-        { name : 'projects', to : '/projects'},
-      ]
-    }
+    return { }
   },
 
   computed : {
