@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import router from '../router'
 
 Vue.use(Vuex);
 
@@ -14,7 +15,9 @@ export const store = new Vuex.Store({
     apache : ['ampps', 'mamp', 'xampp'],
     database : ['sql', 'firebase'],
     os : [ 'Ubuntu Linux', 'OSX' ],
-    ide : ['Atom', 'Sublime', 'Vim']
+    ide : ['Atom', 'Sublime', 'Vim'],
+    routes :  [ ...router.options.routes ]
+
   },
   actions : {
 
