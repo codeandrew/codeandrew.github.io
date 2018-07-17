@@ -18,6 +18,7 @@
 </template>
 
 <script>
+import { mapState, mapGetters } from 'vuex'
 export default {
   data(){
     return {
@@ -28,6 +29,16 @@ export default {
         { name : 'projects', to : '/projects'},
       ]
     }
+  },
+
+  computed : {
+    ...mapState([
+      'routes'
+    ]),
+
+    ...mapGetters([
+      'publicRoutes'
+    ])
   },
   methods : {
     closeNav(){
