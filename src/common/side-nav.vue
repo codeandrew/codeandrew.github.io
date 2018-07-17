@@ -16,6 +16,7 @@
           :to="item.path">
             <a  class="test"> {{ item.name }}</a>
         </router-link>
+        <social-media-list />
       </ul>
     </div>
   </nav>
