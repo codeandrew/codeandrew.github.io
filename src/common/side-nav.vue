@@ -38,6 +38,13 @@ export default {
       'publicRoutes'
     ])
   },
+
+  mounted() {
+    //do something after mounting vue instance
+    console.log(this.routes)
+    console.log('public routes: ', this.publicRoutes )
+  },
+
   methods : {
     closeNav(){
       document.getElementById('NavMenu')
@@ -46,5 +53,29 @@ export default {
   }
 }
 </script>
-<style lang="css">
+<style lang="scss">
+#menu {
+  .social-media {
+    ul {
+      li {
+        margin: 0;
+        a {
+          i {
+            font-size : 1.5em !important;
+          }
+          &:hover {
+            &::before {
+              content : ""
+            }
+          }
+        }
+        .info {
+          margin-top : 25px;
+          font-size : 15px;
+        }
+      }
+    }
+
+  }
+}
 </style>
