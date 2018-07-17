@@ -24,6 +24,16 @@ export const store = new Vuex.Store({
   },
   mutations : {
 
-  }
+  },
+
+  getters : {
+
+    publicRoutes : state => {
+      const list = state.routes.filter( x => x.meta )
+      list.pop()
+      return list
+    }
+
+  },
 
 })
