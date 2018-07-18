@@ -23,9 +23,9 @@
 html, body {
   height : 100%;
   width : 100%;
-  background-color: $secondary-color;
+  background-color: $secondary-color !important;
   // color: rgba(255, 255, 255, 0.65);
-  color: $shiny-gray;
+  color: $shiny-gray !important;
   font: {
     family : 'Lato' !important;
     weight: 300 !important;
