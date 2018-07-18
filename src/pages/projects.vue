@@ -2,9 +2,6 @@
   <main class="article projects">
     <div class="container">
       <h2> Page still in construction</h2>
-
-      <!-- <img id="walker" :src="blackWalking_light"> -->
-      <!-- <img id="walker" :src="blackWalking"> -->
       <img id="walker" :src="blackWheel">
     </div>
   </main>
