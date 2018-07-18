@@ -3,8 +3,8 @@
     <div class="container">
       <h1>Error 404</h1>
       <h2> Page not found </h2>
-
-      <img id="walker" src="http://media.giphy.com/media/XGnWMiVXL87Xa/giphy.gif">
+      <!-- <img id="walker" src="http://media.giphy.com/media/XGnWMiVXL87Xa/giphy.gif"> -->
+      <img id="walker" src="https://media.giphy.com/media/Xz5fPy9BGr3r2/giphy.gif">
       <h4>Let's get outta here </h4>
     </div>
   </main>
@@ -23,7 +23,7 @@ export default {
 
     function check(){
       position += walkingLeft ? dist : -dist;
-      walker.style.right = position +'px';
+      walker.style.left = position +'px';
       if (position > leftBorder || position < rightBorder){
         walkingLeft = !walkingLeft;
         walker.classList.toggle('flip')
