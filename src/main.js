@@ -25,6 +25,7 @@ import infoSection from './components/info-section'
 import socialMedia from './components/social-media-list'
 import skillList from './components/skill-list'
 import skillManager from './components/skill-manager'
+import placeholder from './components/placeholder'
 
 Vue.component('head-component', header )
 Vue.component('side-nav', sideNav )
@@ -34,6 +35,7 @@ Vue.component('infoSection', infoSection )
 Vue.component('social-media-list', socialMedia)
 Vue.component('skill-list', skillList )
 Vue.component('skill-manager', skillManager )
+Vue.component('placeholder', placeholder )
 
 //==================
 
