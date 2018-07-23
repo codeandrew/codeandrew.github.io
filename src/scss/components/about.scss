@@ -1,3 +1,5 @@
+$portrait-radius : 220px;
+
 .about {
   height: 100vh;
   // @extend .section-pad-xl;
@@ -8,15 +10,20 @@
 .portrait {
   text-align: center ;
   background-color: #232323;
-  width: 300px;
-  height: 300px;
+  width: $portrait-radius;
+  height: $portrait-radius;
   border-radius : 50%;
   margin: 40px auto;
 
+  @media screen and (min-width: $break-mobile-large){
+    width: $portrait-radius + 80px;
+    height: $portrait-radius + 80px;
+  }
+
   .img-holder{
     border-radius : 50%;
-    width: 300px;
-    height: 300px;
+    width: $portrait-radius;
+    height: $portrait-radius;
     // background-image: url('https://d2jv9003bew7ag.cloudfront.net/uploads/Gustave-Courbet-Le-Desperere-1845-detail-865x577.jpg');
     background-image: url('https://raw.githubusercontent.com/codeandrew/assets/master/images/me-black-and-white.jpg');
     background-position: center center;
@@ -24,6 +31,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @media screen and (min-width: $break-mobile-large){
+      width: $portrait-radius + 80px;
+      height: $portrait-radius + 80px;
+    }
     &:hover {
       -webkit-background-clip: initial;
       @extend .shadow;
@@ -50,7 +61,7 @@ font-size: 14px;
     width :450px;
     padding: 0;
   }
-  
+
   h1, h4 {
     font : {
       weight : 100;
