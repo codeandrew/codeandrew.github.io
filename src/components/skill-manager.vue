@@ -41,8 +41,8 @@
           :skill="webtools"
         />
         <skill-list
-          title="Apache"
-          :skill="apache"
+          title="Web Server"
+          :skill="server"
         />
         <skill-list
           title="Operating System"
@@ -61,7 +61,7 @@ export default {
   computed: {
     ...mapState([
       'programming_languages', 'frameworks', 'markup_languages', 'preprocessor',
-      'webtools', 'database', 'cms', 'apache', 'os', 'ide'
+      'webtools', 'database', 'cms', 'server', 'os', 'ide'
     ])
   },
   mounted(){
