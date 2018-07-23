@@ -9,8 +9,8 @@
       </div>
     </div>
     <div class="about-me">
-      <h1 class="shimmer"> Jean Andrew Fuentes</h1>
-      <h3 class="subtitle"> Full Stack Web Developer</h3>
+      <h1 class="shimmer heading"> Jean Andrew Fuentes</h1>
+      <h3 class="subtitle subheading"> Full Stack Web Developer</h3>
       <br />
 
       <h4>About me</h4>
