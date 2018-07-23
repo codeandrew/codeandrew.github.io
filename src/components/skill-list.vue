@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="skill-list">
-    <h4> {{ title }}</h4>
+    <h4 class="subheading"> {{ title }}</h4>
     <ul>
       <li v-for=" item in skill"> {{ item }} </li>
     </ul>
