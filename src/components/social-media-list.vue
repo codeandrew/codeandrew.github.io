@@ -2,7 +2,7 @@
   <div class="social-media">
     <ul>
       <li v-for="item in list">
-        <a :href="item.to" class="social-button">
+        <a :href="item.to" class="social-button" target="_blank">
           <i :class="item.class" class="spin circle" aria-hidden="true"></i>
         </a>
         <div class="info">
