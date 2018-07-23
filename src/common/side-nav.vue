@@ -40,9 +40,18 @@ export default {
   },
 
   mounted() {
-    //do something after mounting vue instance
-    console.log(this.routes)
-    console.log('public routes: ', this.publicRoutes )
+    const navMenu = document.querySelector('#menuToggle')
+
+    window.onscroll = ( () => {
+          if ( document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50){
+            console.log(document.documentElement.scrollTop)
+            navMenu.classList.add("hide")
+          } else {
+            navMenu.classList.remove("hide")
+          }
+    })
+
   },
 
   methods : {
