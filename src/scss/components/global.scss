@@ -62,6 +62,29 @@ p {
   letter-spacing: 1px;
 }
 
+.heading {
+  font-size : 8vw;
+  padding: 0 15px;
+
+  @media screen and (min-width: $break-mobile-large) {
+    font-size : 5vw;
+  }
+  @media screen and (min-width: $break-small-desktop) {
+    font-size : 40px;
+  }
+}
+.subheading {
+  font-size : 6vw;
+  padding: 0 15px;
+
+  @media screen and (min-width: $break-mobile-large) {
+    font-size : 4vw;
+  }
+  @media screen and (min-width: $break-small-desktop) {
+    font-size : 28px;
+  }
+}
+
 .subtitle {
   color : $tertiary-color;
   margin-bottom: 10px;
