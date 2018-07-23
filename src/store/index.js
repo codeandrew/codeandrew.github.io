@@ -12,7 +12,7 @@ export const store = new Vuex.Store({
     markup_languages : ['html5', 'css3'],
     webtools : ['npm','gulp', 'webpack','composer', 'artisan', 'git', 'cpanel', 'sequel pro' ],
     cms : ['wordpress'],
-    apache : ['ampps', 'mamp', 'xampp'],
+    server : ['apache', 'nginx'],
     database : ['sql', 'firebase'],
     os : [ 'Ubuntu Linux', 'OSX' ],
     ide : ['Atom', 'Sublime', 'Vim'],
