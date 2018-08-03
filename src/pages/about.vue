@@ -49,7 +49,7 @@ export default {
         I wasn't always been a programmer but ever since I was kid I love doing things
         on the computer. `,
         ` Well, still now I spend most of my time doing stuff in front of a computer, bashing command lines on
-        the terminal, playing with the system of linux, studying new web technologies, software architectures and frameworks.
+        the terminal, creating shell scripts and automating tools, playing with the system of linux, studying new web technologies, software architectures and frameworks.
         I tend to to write and code for long hours, because I like the sound of my own fingers tapping keys.
         I'm consistently learning new things everyday about programming.
         I use Javascript for creating User Interface and handling client side logic, PHP for handling the backend,
