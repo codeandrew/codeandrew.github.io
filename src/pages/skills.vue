@@ -9,6 +9,7 @@
           {{ phrase }}
           <br>
           <br>
+          {{ knowledge }}
           {{ experience }}
         </p>
 
@@ -30,7 +31,9 @@ export default {
          Strong interest in Linux, cloud computing, containerization, orchestration,
           microservices, and open source platform.`,
      experience : `Experienced in creating Banking Applications, E-commerce and Social Media
-                Platforms. `
+                Platforms. `,
+     knowledge: `Has great knowledge in Full Software Life Cycle Development.
+     From Designing Micro-services Architecture, Version Control, Development to Deployment in different environments.`
 
     }
   }

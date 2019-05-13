@@ -4,6 +4,7 @@
 
     <div class="wrapper">
       <div class="">
+        <h2> Part <span>Dev</span></h2>
         <skill-list
           title="Programming Languages"
           :skill="programming_languages"
@@ -13,40 +14,20 @@
           :skill="frameworks"
         />
         <skill-list
-          title="Content Management System"
-          :skill="cms"
-        />
-      </div>
-      <div class="">
-        <skill-list
-          title="Markup Languages"
-          :skill="markup_languages"
-        />
-        <skill-list
-          title="Preprocessor"
-          :skill="preprocessor"
-        />
-        <skill-list
           title="Database"
           :skill="database"
         />
-        <skill-list
-          title="IDE"
-          :skill="ide"
-        />
       </div>
       <div class="">
+         <h2> Part <span>Ops</span></h2>
+
         <skill-list
-          title="Webtools"
-          :skill="webtools"
+          title="Ops"
+          :skill="devops"
         />
         <skill-list
-          title="Web Server"
-          :skill="server"
-        />
-        <skill-list
-          title="Operating System"
-          :skill="os"
+          title="AWS"
+          :skill="aws"
         />
       </div>
     </div>
@@ -60,8 +41,7 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState([
-      'programming_languages', 'frameworks', 'markup_languages', 'preprocessor',
-      'webtools', 'database', 'cms', 'server', 'os', 'ide'
+      'programming_languages', 'frameworks',  'database', 'devops', 'aws'
     ])
   },
   mounted(){

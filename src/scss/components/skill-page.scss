@@ -17,20 +17,20 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-between;
+    h2 span {
+      font-weight: 600;
+    }
 
     .skill-list {
-      width : 200px;
-      margin: 30px;
+      margin: 32px;
       h4{
         text-align: left;
 
-        &:hover::before {
-          content : '>'
-        }
       }
       ul {
         list-style-type: none;
         text-align: left;
+        padding-left: 24px;
 
         li {
           &::before{
