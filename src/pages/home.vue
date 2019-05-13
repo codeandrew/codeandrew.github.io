@@ -37,7 +37,8 @@ export default {
       phrases : [
         'Hello World! ',
         'I\'m Jean Andrew Fuentes ',
-        'Web Developer  '
+        'Software Developer  ',
+        'DevOps  '
       ]
     }
   },
