@@ -7,7 +7,11 @@
       <div class="content">
         <p >
           {{ phrase }}
+          <br>
+          <br>
+          {{ experience }}
         </p>
+
       </div>
 
     <skill-manager />
@@ -22,10 +26,11 @@ export default {
   data(){
     return {
       phrase :
-        `Here are the list of stuff that I've played, dabbled and cried during my journey in Programming.
-        In the Front End, I use Javascript in building User Interface and client side logic
-        In the Back End, I use PHP in handling server side logic
-        And Python for creating script to automate testings of APIs and other more.`
+        `Skilled in Backend development, systems development, operations and security.
+         Strong interest in Linux, cloud computing, containerization, orchestration,
+          microservices, and open source platform.`,
+     experience : `Experienced in creating Banking Applications, E-commerce and Social Media
+                Platforms. `
 
     }
   }
