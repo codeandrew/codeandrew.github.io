@@ -45,7 +45,6 @@ export default {
     window.onscroll = ( () => {
           if ( document.body.scrollTop > 50 ||
             document.documentElement.scrollTop > 50){
-            console.log(document.documentElement.scrollTop)
             navMenu.classList.add("hide")
           } else {
             navMenu.classList.remove("hide")
