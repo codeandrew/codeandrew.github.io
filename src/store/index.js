@@ -11,8 +11,34 @@ export const store = new Vuex.Store({
     server : ['apache', 'nginx'],
     database : ['Sql', 'Mongo', 'Firebase'],
     devops: ['Linux Administration', 'Shell Scripting', 'Nginx',
-    'Containerization (Docker)', 'Container Orchestration (Kubernetes)',
-    'CI/CD (Gitlab Runner)' ],
+      'Network'
+
+    ],
+    infrastructure : [
+      'Containerization (Docker)',
+      'Kubernetes',
+      'Openshift'
+    ],
+    cloud_platforms: [
+      "AWS",
+      "Azure",
+      "Digital Ocean"
+    ],
+    automation: [
+      "Gitlab Runner",
+      "Azure Pipelines"
+    ],
+    monitoring : [
+    "Prometheus",
+    "Grafana"
+    ],
+    logging: [
+    "Elastic Seach",
+    "FluentD",
+    "Logstash",
+    "Kibana"
+    ],
+
     aws : ['ECR', 'EC2', 'S3 Bucket'],
     routes :  [ ...router.options.routes ]
 

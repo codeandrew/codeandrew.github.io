@@ -25,9 +25,27 @@
           title="Ops"
           :skill="devops"
         />
+
         <skill-list
-          title="AWS"
-          :skill="aws"
+          title="Infrastructure"
+          :skill="infrastructure"
+        />
+        <skill-list
+          title="CI/CD"
+          :skill="automation"
+        />
+        <skill-list
+          title="Monitoring"
+          :skill="monitoring"
+        />
+        <skill-list
+          title="Logging"
+          :skill="logging"
+        />
+
+        <skill-list
+          title="Cloud Platforms"
+          :skill="cloud_platforms"
         />
       </div>
     </div>
@@ -41,7 +59,9 @@ import { mapState } from 'vuex'
 export default {
   computed: {
     ...mapState([
-      'programming_languages', 'frameworks',  'database', 'devops', 'aws'
+      'programming_languages', 'frameworks',  'database', 'devops', 'aws',
+      'cloud_platforms', 'automation', 'monitoring', 'logging',
+      'infrastructure'
     ])
   },
   mounted(){
