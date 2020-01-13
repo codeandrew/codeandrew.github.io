@@ -10,7 +10,7 @@
     </div>
     <div class="about-me">
       <h1 class="heading"> Jean Andrew Fuentes</h1>
-      <h3 class="subtitle subheading"> Full Stack Web Developer</h3>
+      <h3 class="subtitle subheading"> Software Engineer </h3>
       <br />
 
       <h4>About me</h4>
@@ -45,14 +45,14 @@ export default {
       par : `Por pura amplitud de extrañas características anatómicas, el camaleón tiene pocos rivales. Una lengua mucho más larga que su cuerpo, disparando para atrapar insectos en una fracción de segundo. Ojos de visión telescópica que giran independientemente en las torretas abovedadas. Pies con dedos de los pies fusionados en pinzas tipo mitones. Cuernos que brotan de la frente y el hocico. Adornos nasales nudosos. Una aleta de piel que rodea el cuello como una puntilla de encaje sobre un noble isabelino.`,
 
       about_me : [
-        ` Hi! I'm a Full Stack Web Developer. I specialize in JavaScript and Python in particular.
+        ` Hi! I'm a Software Engineer/DevOps. I specialize in Infrastructure and Automation in particular.
         I wasn't always been a programmer but ever since I was kid I love doing things
         on the computer. `,
         ` Well, still now I spend most of my time doing stuff in front of a computer, bashing command lines on
-        the terminal, creating shell scripts and automating tools, playing with the system of linux, studying new web technologies, software architectures and frameworks.
+        the terminal, creating shell scripts and automating tools, playing with the system of linux, studying network security, system architectures and infrastructure.
         I tend to to write and code for long hours, because I like the sound of my own fingers tapping keys.
-        I'm consistently learning new things everyday about programming.
-        My other hobbies are Offensive Security and Raspberry Pi.
+        I'm consistently learning new things everyday about Softwares, System Architectures, Cloud Computing and Ethical Hacking.
+        My other hobbies are Playing RPG games, Gundams and Raspberry Pi.
          `
       ],
       about_the_web : ` This is a place where I record my thoughts and discoveries which are more or less related to programming and stuff that I like.
