@@ -12,8 +12,26 @@
   <body>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
     <script>
-    window.location.replace('/docs');
+    // window.location.replace('/docs');
+    
+      var firebaseConfig = {
+        apiKey: "AIzaSyBP6yYXrg108EDATuwywTLOLi94I9jreWw",
+        authDomain: "codeandrew-github-io.firebaseapp.com",
+        databaseURL: "https://codeandrew-github-io.firebaseio.com",
+        projectId: "codeandrew-github-io",
+        storageBucket: "codeandrew-github-io.appspot.com",
+        messagingSenderId: "860124381755",
+        appId: "1:860124381755:web:3e3383166c057ce4d1921e",
+        measurementId: "G-3NLJ4SF00X"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+
     </script>
   </body>
 </html>
