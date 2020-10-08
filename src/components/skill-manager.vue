@@ -3,8 +3,9 @@
     <!-- <h2>Skill Manager</h2> -->
 
     <div class="wrapper">
-      <div class="">
-        <h2> Part <span>Dev</span></h2>
+      <h2> Part <span>Dev</span></h2>
+
+      <div class="skill-context">
         <skill-list
           title="Programming Languages"
           :skill="programming_languages"
@@ -18,9 +19,9 @@
           :skill="database"
         />
       </div>
-      <div class="">
-         <h2> Part <span>Ops</span></h2>
 
+      <h2> Part <span>Ops</span></h2>
+      <div class="skill-context">
         <skill-list
           title="Ops"
           :skill="devops"
