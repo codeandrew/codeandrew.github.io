@@ -13,16 +13,32 @@
 
 .skill-manager {
   .wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: space-between;
-    h2 span {
-      font-weight: 600;
+    display: block;
+    max-width: 780px;
+    margin: 0 auto;
+
+    h2{
+      text-align: left;
+      border-bottom: 2px solid white;
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+
+      span {
+            font-weight: 600;
+          }
+    }
+
+    .skill-context{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: space-around;
     }
 
     .skill-list {
-      margin: 32px;
+      flex: 0 0 33.333333%;
+      // flex: 0 0 33%;
+
       h4{
         text-align: left;
 
