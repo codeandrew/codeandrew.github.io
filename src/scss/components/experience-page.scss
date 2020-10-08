@@ -1,0 +1,72 @@
+
+.experience-page {
+  height: 100vh;
+  animation : opacity-page 1s linear;
+  position: relative;
+
+  .content {
+    max-width: 780px;
+    margin: 20px auto;
+    text-align: justify;
+  }
+}
+
+.experience-block { 
+  h2 {
+
+  }
+  h3{
+
+  }
+  p {
+    
+  }
+}
+
+.skill-manager {
+  .wrapper {
+    display: block;
+    max-width: 780px;
+    margin: 0 auto;
+
+    h2{
+      text-align: left;
+      border-bottom: 2px solid rgba(255, 255, 255, .6);
+      padding-bottom: 8px;
+      margin-bottom: 16px;
+
+      span {
+            font-weight: 600;
+          }
+    }
+
+    .skill-context{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
+
+    .skill-list {
+      flex: 0 0 33.333333%;
+      // flex: 0 0 33%;
+
+      h4{
+        text-align: left;
+
+      }
+      ul {
+        list-style-type: none;
+        text-align: left;
+        padding-left: 24px;
+
+        li {
+          &::before{
+            content: ">_";
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+}

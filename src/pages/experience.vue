@@ -2,16 +2,12 @@
   <main class="article experience-page">
     <h1 class="heading">Experience</h1>
 
-    <div class="container">
-      <div class="content">
-        <p >
-          {{ phrase }}
-          <br>
-          <br>
-          {{ knowledge }}
-          {{ experience }}
-        </p>
-
+    <div class="content">
+      <div class="experience-block" v-for="exp in experiences">
+        <h3> {{ exp.company }} </h3>
+        <p> {{ exp.role }} <br />
+          {{ exp.date }} </p>
+        <p> {{ exp.description }} </p>
       </div>
     </div>
 
@@ -22,15 +18,16 @@
 export default {
   data(){
     return {
-      phrase :
-        `Skilled in Backend development, systems development, operations and security.
-         Strong interest in Linux, cloud computing, containerization, orchestration,
-          microservices, and open source platform.`,
-     experience : `Experienced in creating Banking Applications, E-commerce and Social Media
-                Platforms. `,
-     knowledge: `Has great knowledge in Full Software Life Cycle Development.
-     From Designing Micro-services Architecture, Version Control, Development to Deployment in different environments.`
-
+     experiences : [
+       {
+        company : "WhiteCloak Technology",
+        role: "Software Engineer",
+        date: "Aug 2017 – Oct 2019",
+        description : `Experienced in creating banking applications, social media platform and mall enterprise softwares.
+                        Has great knowledge in Full Software Life Cycle Development.
+                        From designing micro-services architecture, version control, development to deployment in different environments`
+       }
+     ]
     }
   }
 }

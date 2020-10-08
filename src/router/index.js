@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '../pages/home'
 import About from '../pages/about'
 import Skills from '../pages/skills'
+import Experience from '../pages/experience'
 import Projects from '../pages/projects'
 import PageNotFound from '../pages/not-found.vue'
 
@@ -52,6 +53,22 @@ export default new Router({
           {
             name: 'skills',
             content: 'My Skills'
+          }
+        ]
+      }
+
+    },
+    {
+      path: '/experience',
+      name : 'experience',
+      component : Experience,
+      meta : {
+        requiresAuth: false,
+        title : "My Experiences",
+        metaTags: [
+          {
+            name: 'experience',
+            content: 'My Experience'
           }
         ]
       }
