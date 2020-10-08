@@ -8,6 +8,9 @@
         <p> {{ exp.role }} <br />
           {{ exp.date }} </p>
         <p> {{ exp.description }} </p>
+        <ul> Responsibilities:
+          <li v-for="item in exp.responsibilities"> {{ item }} </li>
+        </ul>
       </div>
     </div>
 
@@ -25,7 +28,12 @@ export default {
         date: "Aug 2017 – Oct 2019",
         description : `Experienced in creating banking applications, social media platform and mall enterprise softwares.
                         Has great knowledge in Full Software Life Cycle Development.
-                        From designing micro-services architecture, version control, development to deployment in different environments`
+                        From designing micro-services architecture, version control, development to deployment in different environments`,
+        responsibilities : [
+          'Front End Development',
+          'Back End Development',
+          'DevOps'
+        ]
        }
      ]
     }
